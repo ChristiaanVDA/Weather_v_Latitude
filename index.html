@@ -3,14 +3,111 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Latitude vs Weather</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="styles.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
 </head>
 
 <body>
-<!-- insert description of project -->
-<!-- insert list of links to each visualization page -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="#">Latitude</a>
+        </div>
+  
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Comparison</a></li>
+            <li><a href="#">Data</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  
+    <!-- Creates the Overall Grid -->
+    <div class="container">
+
+        <!-- First Row -->
+        <div class="row">
+          <h1>Test header1</h1>
+        </div>
+    
+        <!-- Second Row 
+        <div class="row">
+    
+          <!-- First of two columns -->
+          <div class="col-md-6">
+            <h1>I'm a size 6 column. I take up half a 12 column row</h1>
+          </div>
+    
+          <!-- Second of two columns -->
+          <div class="col-md-6">
+            <h1>I'm a size 6 column. I take up half a 12 column row</h1>
+          </div>
+        </div>
+    
+        <!--Third Row-->-->
+        <div class="row">
+          <!--First of Two Columns-->
+          <div class="col-md-8">
+            <h1>Columns don't need to be the same size. I'm a size 8 column.</h1>
+          </div>
+          <!--Second of Two Columns-->
+          <div class="col-md-4">
+            <h1>They just need to fill 12 columns or less per row. I'm a 4 column.</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  <h1>Latitude vs Weather</h1>
+  <br>
+  <h2>About this Project</h2>
+  <p>
+  The <b>Latitude vs Weather</b> project was a simple exercise to investigate how (or if) 
+  certain elements of weather are affected by latitude. For instance, temperature should increase
+  as one approaches the equator, or decrease as one approaches the poles. But what about humidty,
+  precipitation, or wind speed? Please check the links below to see the results.
+  </p>
+  <br>
+  <h2>Data Sources</h2>
+  <p>
+  Latitudes and longitudes were calculated randomly, then matched to the nearest city using CityPy.
+  Current weather data for those cities was obtained from OpenWeatherMap on February 22, 2018 at approximately 10:00 AM GMT. 
+  </p>
+  <br>
+  <!-- insert list of links to each visualization page -->
+  <h2>Links</h2>
+  <li><a href="temperature.html">Latitude vs Temperature</a></li>
+  <li><a href="humidity.html">Latitude vs Humidity</a></li>
+  <li><a href="cloudiness.html">Latitude vs Cloudiness</a></li>
+  <li><a href="wind_speed.html">Latitude vs Wind Speed</a></li>
+
 
 </body>
 
