@@ -7,12 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Latitude vs Weather</title>
-  
+  <link href=https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.css rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
+  <div class="container">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -48,68 +50,27 @@
     </nav>
   
     <!-- Creates the Overall Grid -->
-    <div class="container">
+    
 
         <!-- First Row -->
         <div class="row">
-          <h1>Latitude vs Weather</h1>
+          <div class="col-md-8">
+            <h2>Summary: Latitude vs Weather</h2>
+          </div>
         </div>
     
         <!-- Second Row-->
         <div class="row">
-          <h2>About this Project</h2>
-          <p>
-          The <b>Latitude vs Weather</b> project was a simple exercise to investigate how (or if) 
-          certain elements of weather are affected by latitude. For instance, temperature should increase
-          as one approaches the equator, or decrease as one approaches the poles. But what about humidty,
-          precipitation, or wind speed? Please check the links below to see the results.</p>
-    
-          <!-- First of two columns 
-          <div class="col-md-6">
-            <h2>About this Project</h2>
-          </div>
-    
-          <!-- Second of two columns
-          <div class="col-md-6">
-            <h1>I'm a size 6 column. I take up half a 12 column row</h1>
-          </div>-->
-        </div>
-    
-        <!--Third Row-->-->
-        <div class="row">
-          <!--First of Two Columns-->
           <div class="col-md-8">
-            <h1>Columns don't need to be the same size. I'm a size 8 column.</h1>
-          </div>
-          <!--Second of Two Columns-->
-          <div class="col-md-4">
-            <h1>They just need to fill 12 columns or less per row. I'm a 4 column.</h1>
+            <p>
+            The <b>Latitude vs Weather</b> project was a simple exercise to investigate how (or if) 
+            certain elements of weather are affected by latitude. For instance, temperature should increase
+            as one approaches the equator, or decrease as one approaches the poles. But what about humidty,
+            precipitation, or wind speed? Please explore these pages to see the results.</p>
           </div>
         </div>
-      </div>
     </div>
-  
-
-
-  <h2>About this Project</h2>
-  <p>
-
-  </p>
-  <br>
-  <h2>Data Sources</h2>
-  <p>
-  Latitudes and longitudes were calculated randomly, then matched to the nearest city using CityPy.
-  Current weather data for those cities was obtained from OpenWeatherMap on February 22, 2018 at approximately 10:00 AM GMT. 
-  </p>
-  <br>
-  <!-- insert list of links to each visualization page -->
-  <h2>Links</h2>
-  <li><a href="temperature.html">Latitude vs Temperature</a></li>
-  <li><a href="humidity.html">Latitude vs Humidity</a></li>
-  <li><a href="cloudiness.html">Latitude vs Cloudiness</a></li>
-  <li><a href="wind_speed.html">Latitude vs Wind Speed</a></li>
-
-
+  </div>
 </body>
 
 </html>
