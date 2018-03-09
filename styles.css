@@ -1,2 +1,24 @@
-body {background-color: rgb(164,200,210);
+body {background-color: rgb(164,200,210);}
+hr {
+    height: 4px;
+    margin-left: 15px;
+    margin-bottom:-3px;
+  }
+.hr-primary{
+    background-image: -webkit-linear-gradient(left, rgba(66,133,244,.8), rgba(66, 133, 244,.6), rgba(0,0,0,0));    
 }
+img.largeSquare {
+    width: 500px;
+    height: 500px;}
+img.mediumSquare {
+    width: 250px;
+    height: 250px;}
+img.smallSquare {
+    width: 100px;
+    height: 100px;}
+img.mediumPortrait {
+    width: 220px;
+    height: 360px;}
+img.mediumLandscape {
+    width: 360px;
+    height: 220px;}
