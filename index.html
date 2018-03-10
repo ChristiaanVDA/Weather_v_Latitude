@@ -53,27 +53,41 @@
     
 
         <!-- First Row -->
-        <div class="row">
+        <section class="row">
           <div class="col-md-8">
-            <div class ="box white">
-            <div class="media">
-              <div class="pull-left">
-                <h2 class ="media-heading">Summary: Lattitude vs Weather</h2>
+            <div class ="media box white">
+              <!--div class="pull-left"-->
+              <h2 class ="media-heading">Summary: Lattitude vs Weather</h2>
                 <hr>
-              </div>
-              <div class="pull-left">
-                <img class="media-object" src="temp_lat.png" alt"vsTemp">
-              </div>
-              <div class="pull-left">
-                <h4 class="media-heading">Summary: Lattitude vs Weather</h4>
+              <div class="clearfix">
+                <img class="media-object img medLargeLandscape media-middle pull-left" src="temp_lat.png" alt"vsTemp">
+                           
                 <p>The <b>Latitude vs Weather</b> project was a simple exercise to investigate how (or if) 
                 certain elements of weather are affected by latitude. For instance, temperature should increase
-                as one approaches the equator, or decrease as one approaches the poles. But what about humidty,
-                precipitation, or wind speed? Please explore these pages to see the results.</p>
+                as one approaches the equator and decrease as one approaches the poles. But what about humidty,
+                precipitation, or wind speed?</p>
+                  
+                <p>Latitudes and longitudes were calculated randomly, then matched to the nearest city using CityPy.
+                Over 500 unique cities were obtained this way. Then, current weather data for each city was obtained
+                from OpenWeatherMap. Weather data was obtained on February 22, 2018 at approximately 10:00 AM GMT.</p>
+                
               </div>
             </div>
           </div>
-        </div>
+          <div class="col-md-4">
+            <div class ="media box white">
+              <h3 class ="media-heading">Visualizations</h3>
+                
+              <!--div class="row thumbnail"-->
+              <img src="temp_lat.png" class= "smallLandscape pull-left" alt="Temperature">
+              <img src="humid_lat.png" class = "smallLandscape pull-right" alt ="Humidity">
+              <img src="cloud_lat.png" class= "smallLandscape pull-left" alt="Cloudiness">
+              <img src="wind_lat.png" class = "smallLandscape pull-right" alt ="Windspeed">
+              
+                            
+            </div>
+          </div>
+        </section>
   </div>
 </body>
 
