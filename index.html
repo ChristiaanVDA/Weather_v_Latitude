@@ -7,93 +7,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Latitude vs Weather</title>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link href=https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.css rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 
-
 </head>
 
 <body>
-  <div class="container">
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
+  <nav class="navbar navbar-default">
+    <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsedNav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-            <a class="navbar-brand" href="#">Latitude</a>
-        </div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#collapsedNav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="index.html">Latitude</a>
+      </div>
       
   
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="#collapsedNav">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="#collapsedNav">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="temperature.html">Temperature</a></li>
                 <li><a href="humidity.html">Humidity</a></li>
                 <li><a href="cloudiness.html">Cloudiness</a></li>
                 <li><a href="windspeed.html">Wind Speed</a></li>
-            </ul>
+              </ul>
           </li>
-          <li><a href="comparison.html">Comparison</a></li>
-          <li><a href="data.html">Data</a></li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><a href="data.html">Data</a></li>
+        </ul>
       </div>
-      <!-- /.container-fluid -->
-    </nav>
-  
-    <!-- Creates the Overall Grid -->
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
     
-
-        <!-- First Row -->
-        <section class="row">
-          <div class="col-md-8">
-            <div class ="media box white">
-              <!--div class="pull-left"-->
-              <h2 class ="media-heading">Summary: Lattitude vs Weather</h2>
-                <hr>
-              <div class="clearfix">
-                <img class="media-object img medLargeLandscape media-middle pull-left" src="temp_lat.png" alt"vsTemp">
-                           
-                <p>The <b>Latitude vs Weather</b> project was a simple exercise to investigate how (or if) 
-                certain elements of weather are affected by latitude. For instance, temperature should increase
-                as one approaches the equator and decrease as one approaches the poles. But what about humidty,
-                precipitation, or wind speed?</p>
-                  
-                <p>Latitudes and longitudes were calculated randomly, then matched to the nearest city using CityPy.
-                Over 500 unique cities were obtained this way. Then, current weather data for each city was obtained
-                from OpenWeatherMap. Weather data was obtained on February 22, 2018 at approximately 10:00 AM GMT.</p>
-                
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class ="media box white">
-              <h3 class ="media-heading">Visualizations</h3>
-                
-              <!--div class="row thumbnail"-->
-              <img src="temp_lat.png" class= "smallLandscape pull-left" alt="Temperature">
-              <img src="humid_lat.png" class = "smallLandscape pull-left" alt ="Humidity">
-              <img src="cloud_lat.png" class= "smallLandscape pull-left" alt="Cloudiness">
-              <img src="wind_lat.png" class = "smallLandscape pull-left" alt ="Windspeed">
+    
+  <div class="container">    
+    <!-- First Row -->
+    <section class="row">
+      <div class="col-md-8">
+        <div class ="media box white">
+          <!--div class="pull-left"-->
+          <h2 class ="media-heading">Summary: Lattitude vs Weather</h2>
+            <hr>
+          <div class="clearfix">
+            <img class="media-object img medLargeLandscape media-middle pull-left" src="temp_lat.png" alt"vsTemp">
+                        
+            <p>The <b>Latitude vs Weather</b> project was a simple exercise to investigate how (or if) 
+            certain elements of weather are affected by latitude. For instance, temperature should increase
+            as one approaches the equator and decrease as one approaches the poles. But what about humidty,
+            precipitation, or wind speed?</p>
               
-                            
-            </div>
+            <p>Latitudes and longitudes were calculated randomly, then matched to the nearest city using CityPy.
+            Over 500 unique cities were obtained this way. Then, current weather data for each city was obtained
+            from OpenWeatherMap. Weather data was obtained on February 22, 2018 at approximately 10:00 AM GMT.</p>
+            
           </div>
-        </section>
-  </div>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class ="media box white">
+          <h3 class ="media-heading">Visualizations</h3>
+            
+          <!--div class="row thumbnail"-->
+          <a href="temperature.html" class="">
+            <img src="temp_lat.png" class= "smallLandscape pull-left" alt="Temperature"></a>
+          <a href="humidity.html" class="">
+            <img src="humid_lat.png" class = "smallLandscape pull-left" alt ="Humidity"></a>
+          <a href="cloudiness.html" class="">
+            <img src="cloud_lat.png" class= "smallLandscape pull-left" alt="Cloudiness"></a>
+          <a href="windspeed.html" class="">
+            <img src="wind_lat.png" class = "smallLandscape pull-left" alt ="Windspeed"></a>
+          
+                        
+        </div>
+      </div>
+    </section>
+  </div>  
 
 </body>
 
